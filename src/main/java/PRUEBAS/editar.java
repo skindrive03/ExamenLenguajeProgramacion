@@ -13,7 +13,7 @@ public class editar {
 		subject.setSubject("Neumatica e Hidraulica");
 		subject.setCredits("03");
 		
-		subjectDao.create(subject);
+		subjectDao.update(subject);
 		
 		for( Subject s: subjectDao.findAll()) {
 			System.out.println(s.getIdSubject());
